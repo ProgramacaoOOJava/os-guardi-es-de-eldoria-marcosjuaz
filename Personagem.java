@@ -9,16 +9,17 @@ public class Personagem {
         this.nome = nome;
         this.classe = classe;
         this.nivel = nivel;
-        this.pontosdeVida = pontosDeVida;
-        this.poderBase = PoderBase;
+        this.pontosDeVida = pontosDeVida;
+        this.poderBase = poderBase;
     }
 
     public void exibirStatus() {
         System.out.println("--- Status do Personagem ---");
-        .
-        .
-        .
-
+        System.out.println("Nome: " + nome);
+        System.out.println("Classe: " + classe);
+        System.out.println("Nível: " + nivel);
+        System.out.println("Pontos de Vida: " + pontosDeVida);
+        System.out.println("Poder Base: " + poderBase);
     }
 }
 

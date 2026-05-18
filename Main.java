@@ -1,10 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Personagem heroi1 = new Personagem("Arthus", "Guerreiro", 1, 100, 10.5);
-
-        .
-        .
-        .
-
+        Personagem guerreiroArthur = new Personagem("Arthur", "Guerreiro", 1, 100, 10.5);
+        guerreiroArthur.exibirStatus();
     }
 }
