@@ -24,24 +24,24 @@ public class Grupo {
 
     public void batalhar(Personagem a, Personagem b) {
         System.out.println("\n" + "=".repeat(50));
-        System.out.println("⚔️  BATALHA: " + a.nome + " vs " + b.nome + " ⚔️");
+        System.out.println("BATALHA: " + a.nome + " vs " + b.nome);
         System.out.println("=".repeat(50));
         
         int poderA = a.nivel * (int)a.poderBase;
         int poderB = b.nivel * (int)b.poderBase;
 
-        System.out.println("\n📊 CÁLCULO DE PODER TOTAL:");
+        System.out.println("\n CÁLCULO DE PODER TOTAL:");
         System.out.println(a.nome + " (Nível " + a.nivel + " x Poder " + (int)a.poderBase + ") = " + poderA);
         System.out.println(b.nome + " (Nível " + b.nivel + " x Poder " + (int)b.poderBase + ") = " + poderB);
 
-        System.out.println("\n🎯 RESULTADO:");
+        System.out.println("\n RESULTADO:");
 
         if (poderA > poderB) {
-            System.out.println("🏆 " + a.nome + " venceu! Poder total: " + poderA);
+            System.out.println( a.classe + " " + a.nome + " venceu! Poder total: " + poderA);
         } else if (poderB > poderA) {
-            System.out.println("🏆 " + b.nome + " venceu! Poder total: " + poderB);
+            System.out.println( b.classe + " " + b.nome + " venceu! Poder total: " + poderB);
         } else {
-            System.out.println("⚖️ EMPATE! Ambos têm poder total: " + poderA);
+            System.out.println("EMPATE! Ambos têm poder total: " + poderA);
         }
         System.out.println("=".repeat(50));
 
